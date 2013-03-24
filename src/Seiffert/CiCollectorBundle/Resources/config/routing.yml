@@ -1,0 +1,7 @@
+seiffert_ci_collector_homepage:
+    pattern:  /
+    defaults: { _controller: SeiffertCiCollectorBundle:Default:index }
+
+seiffert_ci_collector_api:
+    pattern: /api
+    defaults: { _controller: SeiffertCiCollectorBundle:Api:index }
