@@ -25,17 +25,9 @@ class Application implements UserInterface
      */
     private $token;
 
-    /**
-     * @ORM\Column(type="string")
-     *
-     * @var string
-     */
-    private $salt;
-
     public function __construct()
     {
         $this->token = md5('token_' . microtime());
-        $this->salt = md5('salt_' . microtime());
     }
 
     /**
@@ -75,7 +67,7 @@ class Application implements UserInterface
      */
     public function getSalt()
     {
-        return $this->salt;
+        return null;
     }
 
     /**

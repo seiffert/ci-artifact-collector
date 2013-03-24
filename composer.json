@@ -13,7 +13,8 @@
         "doctrine/doctrine-fixtures-bundle": "dev-master",
         "symfony/monolog-bundle": "2.2.*",
         "sensio/distribution-bundle": "2.2.*",
-        "sensio/generator-bundle": "2.2.*"
+        "sensio/generator-bundle": "2.2.*",
+        "seiffert/console-extra-bundle": "*"
     },
     "scripts": {
         "post-install-cmd": [

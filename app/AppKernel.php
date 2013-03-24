@@ -15,6 +15,7 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new Seiffert\CiCollectorBundle\SeiffertCiCollectorBundle(),
+            new Seiffert\ConsoleExtraBundle\SeiffertConsoleExtraBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

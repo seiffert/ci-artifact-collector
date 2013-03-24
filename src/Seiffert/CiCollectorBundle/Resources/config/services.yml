@@ -1,7 +1,10 @@
 parameters:
-#    seiffert_ci_collector.example.class: Seiffert\CiCollectorBundle\Example
+    seiffert.ci_collector.command.register_app.class: Seiffert\CiCollectorBundle\Command\RegisterApplicationCommand
 
 services:
-#    seiffert_ci_collector.example:
-#        class: %seiffert_ci_collector.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    seiffert.ci_collector.command.register_app:
+        class: %seiffert.ci_collector.command.register_app.class%
+        arguments:
+            - @doctrine.orm.entity_manager
+        tags:
+            - { name: console.command }
